@@ -1,4 +1,4 @@
-cabal-version:      3.6
+cabal-version:      3.0
 
 name:               if-proto-scip-hs
 version:            0.1.0.0
@@ -7,23 +7,24 @@ license:            BSD-3-Clause
 license-file:       LICENSE
 author:             Don Stewart
 maintainer:         dons00@gmail.com
+homepage:           https://github.com/donsbot/if-proto-scip-hs
 category:           Language
 extra-doc-files:    CHANGELOG.md
 build-type:         Custom
 extra-source-files: src/scip.proto
 
 custom-setup
-    setup-depends: base, Cabal, proto-lens-setup
-    build-tool-depends: proto-lens-protoc:proto-lens-protoc
+    setup-depends:base, Cabal >= 3.6, proto-lens-setup
+--    build-tool-depends: proto-lens-protoc:proto-lens-protoc
 
 library
     ghc-options: -Wall
     exposed-modules:
-        Proto.Proto.Scip,
-        Proto.Proto.Scip_Fields
+        Proto.Src.Scip,
+        Proto.Src.Scip_Fields
     autogen-modules:
-        Proto.Proto.Scip,
-        Proto.Proto.Scip_Fields
+        Proto.Src.Scip,
+        Proto.Src.Scip_Fields
     hs-source-dirs:   src
     default-language: Haskell2010
     build-depends:
