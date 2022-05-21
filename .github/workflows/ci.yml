@@ -11,7 +11,7 @@ jobs:
     container:
       # ubuntu with ghcup already installed
       image: ghcr.io/facebookincubator/hsthrift/ci-base:ghcup
-      options: --cpus 2 --security-opt=seccomp=unconfined
+      options: --cpus 2
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
