@@ -1,6 +1,6 @@
 cabal-version:      3.6
 
-name:               haskell-scip
+name:               if-proto-scip-hs
 version:            0.1.0.0
 synopsis:           Haskell client for SCIP indexers
 license:            BSD-3-Clause
