@@ -1,0 +1,30 @@
+cabal-version:      3.6
+
+name:               haskell-scip
+version:            0.1.0.0
+synopsis:           Haskell client for SCIP indexers
+license:            BSD-3-Clause
+license-file:       LICENSE
+author:             Don Stewart
+maintainer:         dons00@gmail.com
+category:           Language
+extra-doc-files:    CHANGELOG.md
+build-type:         Custom
+extra-source-files: src/scip.proto
+
+custom-setup
+    setup-depends: base, Cabal, proto-lens-setup
+    build-tool-depends: proto-lens-protoc:proto-lens-protoc
+
+library
+    ghc-options: -Wall
+    exposed-modules:
+        Proto.Proto.Scip,
+        Proto.Proto.Scip_Fields
+    autogen-modules:
+        Proto.Proto.Scip,
+        Proto.Proto.Scip_Fields
+    hs-source-dirs:   src
+    default-language: Haskell2010
+    build-depends:
+        proto-lens-runtime, base
