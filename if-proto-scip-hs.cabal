@@ -10,19 +10,12 @@ maintainer:         dons00@gmail.com
 homepage:           https://github.com/donsbot/if-proto-scip-hs
 category:           Language
 extra-doc-files:    CHANGELOG.md
-build-type:         Custom
+build-type:         Simple
 extra-source-files: proto/scip.proto
-
-custom-setup
-    setup-depends:base, Cabal >= 3.6, proto-lens-setup
-    build-tool-depends: proto-lens-protoc:proto-lens-protoc
 
 library
     ghc-options: -Wall
     exposed-modules:
-        Proto.Src.Scip,
-        Proto.Src.Scip_Fields
-    autogen-modules:
         Proto.Src.Scip,
         Proto.Src.Scip_Fields
     hs-source-dirs:   src

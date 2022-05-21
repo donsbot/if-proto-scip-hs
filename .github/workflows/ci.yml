@@ -40,7 +40,7 @@ jobs:
         run: cabal update
       - name: Build proto-lens-protoc wrapper
         run: cabal install proto-lens-protoc
-      - name: Build src
+      - name: Generlate Haskell
         run: protoc --plugin=protoc-gen-haskell="$HOME/.cabal/bin/proto-lens-protoc" --haskell_out=src --proto_path=proto scip.proto
       - name: Build source
         run: cabal build

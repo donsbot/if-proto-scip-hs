@@ -33,7 +33,7 @@ To generate the source files manually, in src/*
     --proto_path=proto
 ```
 
-Build the library:
+Build the library as normal:
 
  > cabal build
 
