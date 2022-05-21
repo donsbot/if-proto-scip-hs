@@ -4,7 +4,8 @@ This uses google's proto-lens generator for Haskell. More details at:
 
 https://github.com/google/proto-lens#readme
 
-Building:
+Building: see the workflow file for most up to date:
+https://github.com/donsbot/if-proto-scip-hs/blob/main/.github/workflows/ci.yml
 
 Get a working GHC environment:
 
@@ -28,8 +29,8 @@ To generate the source files manually, in src/*
 
 ```
   protoc --plugin=protoc-gen-haskell=`which proto-lens-protoc` 
-    --haskell_out=proto \
-    --proto_path=src
+    --haskell_out=src \
+    --proto_path=proto
 ```
 
 Build the library:
