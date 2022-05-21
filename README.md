@@ -1,3 +1,5 @@
+[![CI](https://github.com/donsbot/if-proto-scip-hs/actions/workflows/ci.yml/badge.svg)](https://github.com/donsbot/if-proto-scip-hs/actions/workflows/ci.yml)
+
 # Haskell client bindings to SourceGraphs SCIP format
 
 This uses google's proto-lens generator for Haskell. More details at:
