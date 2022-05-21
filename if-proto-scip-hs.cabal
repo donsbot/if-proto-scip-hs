@@ -1,4 +1,4 @@
-cabal-version:      3.0
+cabal-version:      3.6
 
 name:               if-proto-scip-hs
 version:            0.1.0.0
@@ -11,11 +11,11 @@ homepage:           https://github.com/donsbot/if-proto-scip-hs
 category:           Language
 extra-doc-files:    CHANGELOG.md
 build-type:         Custom
-extra-source-files: src/scip.proto
+extra-source-files: proto/scip.proto
 
 custom-setup
     setup-depends:base, Cabal >= 3.6, proto-lens-setup
---    build-tool-depends: proto-lens-protoc:proto-lens-protoc
+    build-tool-depends: proto-lens-protoc:proto-lens-protoc
 
 library
     ghc-options: -Wall
@@ -27,5 +27,4 @@ library
         Proto.Src.Scip_Fields
     hs-source-dirs:   src
     default-language: Haskell2010
-    build-depends:
-        proto-lens-runtime, base
+    build-depends: proto-lens-runtime, base
