@@ -44,3 +44,5 @@ jobs:
         run: protoc --plugin=protoc-gen-haskell="$HOME/.cabal/bin/proto-lens-protoc" --haskell_out=src --proto_path=proto scip.proto
       - name: Build source
         run: cabal build
+      - name: Run tests
+        run: cabal test

@@ -1,0 +1,40 @@
+
+K
+	scip-java	0.8.0-RC2/file:///home/dons/repos/if-proto-scip-hs/tests/ ³
+
+#src/main/java/com/demo/app/App.java/
+&semanticdb maven . . com/demo/app/App#0
+)semanticdb maven jdk 11 java/lang/String#7
+ .semanticdb maven . . com/demo/app/App#message.:
+
+1semanticdb maven . . com/demo/app/App#`<init>`().6
+-semanticdb maven . . com/demo/app/App#main().0
+")semanticdb maven jdk 11 java/lang/String#
+%)local 00
+)semanticdb maven jdk 11 java/lang/System#4
+-semanticdb maven jdk 11 java/lang/System#out.?
+8semanticdb maven jdk 11 java/io/PrintStream#println(+8).8
+"1semanticdb maven . . com/demo/app/App#`<init>`().:
+%/3semanticdb maven . . com/demo/app/App#getMessage().0
+)semanticdb maven jdk 11 java/lang/String#<
+#3semanticdb maven . . com/demo/app/App#getMessage().5
+.semanticdb maven . . com/demo/app/App#message.V
+&semanticdb maven . . com/demo/app/App#```java
+public class App
+``` Hello world!
+Z
+.semanticdb maven . . com/demo/app/App#message.(```java
+private final String message
+```M
+1semanticdb maven . . com/demo/app/App#`<init>`().```java
+public App()
+```c
+-semanticdb maven . . com/demo/app/App#main().2```java
+public static void main(String[] args)
+```$
+local 0```java
+String[] args
+```d
+3semanticdb maven . . com/demo/app/App#getMessage().-```java
+private final String getMessage()
+```
