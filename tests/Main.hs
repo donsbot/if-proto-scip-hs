@@ -4,8 +4,8 @@
 module Main ( main ) where
 
 import qualified Data.ProtoLens as Proto
-import qualified Proto.Src.Scip as Scip
-import qualified Proto.Src.Scip_Fields as Scip
+import qualified Proto.Scip as Scip
+import qualified Proto.Scip_Fields as Scip
 import qualified Data.ByteString as B
 
 main :: IO ()

@@ -1,9 +1,9 @@
-{- This file was auto-generated from src/scip.proto by the proto-lens-protoc program. -}
+{- This file was auto-generated from scip.proto by the proto-lens-protoc program. -}
 {-# LANGUAGE ScopedTypeVariables, DataKinds, TypeFamilies, UndecidableInstances, GeneralizedNewtypeDeriving, MultiParamTypeClasses, FlexibleContexts, FlexibleInstances, PatternSynonyms, MagicHash, NoImplicitPrelude, DataKinds, BangPatterns, TypeApplications, OverloadedStrings, DerivingStrategies#-}
 {-# OPTIONS_GHC -Wno-unused-imports#-}
 {-# OPTIONS_GHC -Wno-duplicate-exports#-}
 {-# OPTIONS_GHC -Wno-dodgy-exports#-}
-module Proto.Src.Scip_Fields where
+module Proto.Scip_Fields where
 import qualified Data.ProtoLens.Runtime.Prelude as Prelude
 import qualified Data.ProtoLens.Runtime.Data.Int as Data.Int
 import qualified Data.ProtoLens.Runtime.Data.Monoid as Data.Monoid

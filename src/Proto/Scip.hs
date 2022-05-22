@@ -1,9 +1,9 @@
-{- This file was auto-generated from src/scip.proto by the proto-lens-protoc program. -}
+{- This file was auto-generated from scip.proto by the proto-lens-protoc program. -}
 {-# LANGUAGE ScopedTypeVariables, DataKinds, TypeFamilies, UndecidableInstances, GeneralizedNewtypeDeriving, MultiParamTypeClasses, FlexibleContexts, FlexibleInstances, PatternSynonyms, MagicHash, NoImplicitPrelude, DataKinds, BangPatterns, TypeApplications, OverloadedStrings, DerivingStrategies#-}
 {-# OPTIONS_GHC -Wno-unused-imports#-}
 {-# OPTIONS_GHC -Wno-duplicate-exports#-}
 {-# OPTIONS_GHC -Wno-dodgy-exports#-}
-module Proto.Src.Scip (
+module Proto.Scip (
         Descriptor(), Descriptor'Suffix(..), Descriptor'Suffix(),
         Descriptor'Suffix'UnrecognizedValue, Diagnostic(),
         DiagnosticTag(..), DiagnosticTag(),
@@ -43,9 +43,9 @@ import qualified Data.ProtoLens.Runtime.Data.Vector.Unboxed as Data.Vector.Unbox
 import qualified Data.ProtoLens.Runtime.Text.Read as Text.Read
 {- | Fields :
      
-         * 'Proto.Src.Scip_Fields.name' @:: Lens' Descriptor Data.Text.Text@
-         * 'Proto.Src.Scip_Fields.disambiguator' @:: Lens' Descriptor Data.Text.Text@
-         * 'Proto.Src.Scip_Fields.suffix' @:: Lens' Descriptor Descriptor'Suffix@ -}
+         * 'Proto.Scip_Fields.name' @:: Lens' Descriptor Data.Text.Text@
+         * 'Proto.Scip_Fields.disambiguator' @:: Lens' Descriptor Data.Text.Text@
+         * 'Proto.Scip_Fields.suffix' @:: Lens' Descriptor Descriptor'Suffix@ -}
 data Descriptor
   = Descriptor'_constructor {_Descriptor'name :: !Data.Text.Text,
                              _Descriptor'disambiguator :: !Data.Text.Text,
@@ -381,12 +381,12 @@ instance Control.DeepSeq.NFData Descriptor'Suffix where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
      
-         * 'Proto.Src.Scip_Fields.severity' @:: Lens' Diagnostic Severity@
-         * 'Proto.Src.Scip_Fields.code' @:: Lens' Diagnostic Data.Text.Text@
-         * 'Proto.Src.Scip_Fields.message' @:: Lens' Diagnostic Data.Text.Text@
-         * 'Proto.Src.Scip_Fields.source' @:: Lens' Diagnostic Data.Text.Text@
-         * 'Proto.Src.Scip_Fields.tags' @:: Lens' Diagnostic [DiagnosticTag]@
-         * 'Proto.Src.Scip_Fields.vec'tags' @:: Lens' Diagnostic (Data.Vector.Vector DiagnosticTag)@ -}
+         * 'Proto.Scip_Fields.severity' @:: Lens' Diagnostic Severity@
+         * 'Proto.Scip_Fields.code' @:: Lens' Diagnostic Data.Text.Text@
+         * 'Proto.Scip_Fields.message' @:: Lens' Diagnostic Data.Text.Text@
+         * 'Proto.Scip_Fields.source' @:: Lens' Diagnostic Data.Text.Text@
+         * 'Proto.Scip_Fields.tags' @:: Lens' Diagnostic [DiagnosticTag]@
+         * 'Proto.Scip_Fields.vec'tags' @:: Lens' Diagnostic (Data.Vector.Vector DiagnosticTag)@ -}
 data Diagnostic
   = Diagnostic'_constructor {_Diagnostic'severity :: !Severity,
                              _Diagnostic'code :: !Data.Text.Text,
@@ -815,11 +815,11 @@ instance Control.DeepSeq.NFData DiagnosticTag where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
      
-         * 'Proto.Src.Scip_Fields.relativePath' @:: Lens' Document Data.Text.Text@
-         * 'Proto.Src.Scip_Fields.occurrences' @:: Lens' Document [Occurrence]@
-         * 'Proto.Src.Scip_Fields.vec'occurrences' @:: Lens' Document (Data.Vector.Vector Occurrence)@
-         * 'Proto.Src.Scip_Fields.symbols' @:: Lens' Document [SymbolInformation]@
-         * 'Proto.Src.Scip_Fields.vec'symbols' @:: Lens' Document (Data.Vector.Vector SymbolInformation)@ -}
+         * 'Proto.Scip_Fields.relativePath' @:: Lens' Document Data.Text.Text@
+         * 'Proto.Scip_Fields.occurrences' @:: Lens' Document [Occurrence]@
+         * 'Proto.Scip_Fields.vec'occurrences' @:: Lens' Document (Data.Vector.Vector Occurrence)@
+         * 'Proto.Scip_Fields.symbols' @:: Lens' Document [SymbolInformation]@
+         * 'Proto.Scip_Fields.vec'symbols' @:: Lens' Document (Data.Vector.Vector SymbolInformation)@ -}
 data Document
   = Document'_constructor {_Document'relativePath :: !Data.Text.Text,
                            _Document'occurrences :: !(Data.Vector.Vector Occurrence),
@@ -1067,12 +1067,12 @@ instance Control.DeepSeq.NFData Document where
                    (Control.DeepSeq.deepseq (_Document'symbols x__) ())))
 {- | Fields :
      
-         * 'Proto.Src.Scip_Fields.metadata' @:: Lens' Index Metadata@
-         * 'Proto.Src.Scip_Fields.maybe'metadata' @:: Lens' Index (Prelude.Maybe Metadata)@
-         * 'Proto.Src.Scip_Fields.documents' @:: Lens' Index [Document]@
-         * 'Proto.Src.Scip_Fields.vec'documents' @:: Lens' Index (Data.Vector.Vector Document)@
-         * 'Proto.Src.Scip_Fields.externalSymbols' @:: Lens' Index [SymbolInformation]@
-         * 'Proto.Src.Scip_Fields.vec'externalSymbols' @:: Lens' Index (Data.Vector.Vector SymbolInformation)@ -}
+         * 'Proto.Scip_Fields.metadata' @:: Lens' Index Metadata@
+         * 'Proto.Scip_Fields.maybe'metadata' @:: Lens' Index (Prelude.Maybe Metadata)@
+         * 'Proto.Scip_Fields.documents' @:: Lens' Index [Document]@
+         * 'Proto.Scip_Fields.vec'documents' @:: Lens' Index (Data.Vector.Vector Document)@
+         * 'Proto.Scip_Fields.externalSymbols' @:: Lens' Index [SymbolInformation]@
+         * 'Proto.Scip_Fields.vec'externalSymbols' @:: Lens' Index (Data.Vector.Vector SymbolInformation)@ -}
 data Index
   = Index'_constructor {_Index'metadata :: !(Prelude.Maybe Metadata),
                         _Index'documents :: !(Data.Vector.Vector Document),
@@ -1321,11 +1321,11 @@ instance Control.DeepSeq.NFData Index where
                    (Control.DeepSeq.deepseq (_Index'externalSymbols x__) ())))
 {- | Fields :
      
-         * 'Proto.Src.Scip_Fields.version' @:: Lens' Metadata ProtocolVersion@
-         * 'Proto.Src.Scip_Fields.toolInfo' @:: Lens' Metadata ToolInfo@
-         * 'Proto.Src.Scip_Fields.maybe'toolInfo' @:: Lens' Metadata (Prelude.Maybe ToolInfo)@
-         * 'Proto.Src.Scip_Fields.projectRoot' @:: Lens' Metadata Data.Text.Text@
-         * 'Proto.Src.Scip_Fields.textDocumentEncoding' @:: Lens' Metadata TextEncoding@ -}
+         * 'Proto.Scip_Fields.version' @:: Lens' Metadata ProtocolVersion@
+         * 'Proto.Scip_Fields.toolInfo' @:: Lens' Metadata ToolInfo@
+         * 'Proto.Scip_Fields.maybe'toolInfo' @:: Lens' Metadata (Prelude.Maybe ToolInfo)@
+         * 'Proto.Scip_Fields.projectRoot' @:: Lens' Metadata Data.Text.Text@
+         * 'Proto.Scip_Fields.textDocumentEncoding' @:: Lens' Metadata TextEncoding@ -}
 data Metadata
   = Metadata'_constructor {_Metadata'version :: !ProtocolVersion,
                            _Metadata'toolInfo :: !(Prelude.Maybe ToolInfo),
@@ -1583,15 +1583,15 @@ instance Control.DeepSeq.NFData Metadata where
                          (_Metadata'textDocumentEncoding x__) ()))))
 {- | Fields :
      
-         * 'Proto.Src.Scip_Fields.range' @:: Lens' Occurrence [Data.Int.Int32]@
-         * 'Proto.Src.Scip_Fields.vec'range' @:: Lens' Occurrence (Data.Vector.Unboxed.Vector Data.Int.Int32)@
-         * 'Proto.Src.Scip_Fields.symbol' @:: Lens' Occurrence Data.Text.Text@
-         * 'Proto.Src.Scip_Fields.symbolRoles' @:: Lens' Occurrence Data.Int.Int32@
-         * 'Proto.Src.Scip_Fields.overrideDocumentation' @:: Lens' Occurrence [Data.Text.Text]@
-         * 'Proto.Src.Scip_Fields.vec'overrideDocumentation' @:: Lens' Occurrence (Data.Vector.Vector Data.Text.Text)@
-         * 'Proto.Src.Scip_Fields.syntaxKind' @:: Lens' Occurrence SyntaxKind@
-         * 'Proto.Src.Scip_Fields.diagnostics' @:: Lens' Occurrence [Diagnostic]@
-         * 'Proto.Src.Scip_Fields.vec'diagnostics' @:: Lens' Occurrence (Data.Vector.Vector Diagnostic)@ -}
+         * 'Proto.Scip_Fields.range' @:: Lens' Occurrence [Data.Int.Int32]@
+         * 'Proto.Scip_Fields.vec'range' @:: Lens' Occurrence (Data.Vector.Unboxed.Vector Data.Int.Int32)@
+         * 'Proto.Scip_Fields.symbol' @:: Lens' Occurrence Data.Text.Text@
+         * 'Proto.Scip_Fields.symbolRoles' @:: Lens' Occurrence Data.Int.Int32@
+         * 'Proto.Scip_Fields.overrideDocumentation' @:: Lens' Occurrence [Data.Text.Text]@
+         * 'Proto.Scip_Fields.vec'overrideDocumentation' @:: Lens' Occurrence (Data.Vector.Vector Data.Text.Text)@
+         * 'Proto.Scip_Fields.syntaxKind' @:: Lens' Occurrence SyntaxKind@
+         * 'Proto.Scip_Fields.diagnostics' @:: Lens' Occurrence [Diagnostic]@
+         * 'Proto.Scip_Fields.vec'diagnostics' @:: Lens' Occurrence (Data.Vector.Vector Diagnostic)@ -}
 data Occurrence
   = Occurrence'_constructor {_Occurrence'range :: !(Data.Vector.Unboxed.Vector Data.Int.Int32),
                              _Occurrence'symbol :: !Data.Text.Text,
@@ -2029,9 +2029,9 @@ instance Control.DeepSeq.NFData Occurrence where
                             (Control.DeepSeq.deepseq (_Occurrence'diagnostics x__) ()))))))
 {- | Fields :
      
-         * 'Proto.Src.Scip_Fields.manager' @:: Lens' Package Data.Text.Text@
-         * 'Proto.Src.Scip_Fields.name' @:: Lens' Package Data.Text.Text@
-         * 'Proto.Src.Scip_Fields.version' @:: Lens' Package Data.Text.Text@ -}
+         * 'Proto.Scip_Fields.manager' @:: Lens' Package Data.Text.Text@
+         * 'Proto.Scip_Fields.name' @:: Lens' Package Data.Text.Text@
+         * 'Proto.Scip_Fields.version' @:: Lens' Package Data.Text.Text@ -}
 data Package
   = Package'_constructor {_Package'manager :: !Data.Text.Text,
                           _Package'name :: !Data.Text.Text,
@@ -2298,10 +2298,10 @@ instance Control.DeepSeq.NFData ProtocolVersion where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
      
-         * 'Proto.Src.Scip_Fields.symbol' @:: Lens' Relationship Data.Text.Text@
-         * 'Proto.Src.Scip_Fields.isReference' @:: Lens' Relationship Prelude.Bool@
-         * 'Proto.Src.Scip_Fields.isImplementation' @:: Lens' Relationship Prelude.Bool@
-         * 'Proto.Src.Scip_Fields.isTypeDefinition' @:: Lens' Relationship Prelude.Bool@ -}
+         * 'Proto.Scip_Fields.symbol' @:: Lens' Relationship Data.Text.Text@
+         * 'Proto.Scip_Fields.isReference' @:: Lens' Relationship Prelude.Bool@
+         * 'Proto.Scip_Fields.isImplementation' @:: Lens' Relationship Prelude.Bool@
+         * 'Proto.Scip_Fields.isTypeDefinition' @:: Lens' Relationship Prelude.Bool@ -}
 data Relationship
   = Relationship'_constructor {_Relationship'symbol :: !Data.Text.Text,
                                _Relationship'isReference :: !Prelude.Bool,
@@ -2629,11 +2629,11 @@ instance Control.DeepSeq.NFData Severity where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
      
-         * 'Proto.Src.Scip_Fields.scheme' @:: Lens' Symbol Data.Text.Text@
-         * 'Proto.Src.Scip_Fields.package' @:: Lens' Symbol Package@
-         * 'Proto.Src.Scip_Fields.maybe'package' @:: Lens' Symbol (Prelude.Maybe Package)@
-         * 'Proto.Src.Scip_Fields.descriptors' @:: Lens' Symbol [Descriptor]@
-         * 'Proto.Src.Scip_Fields.vec'descriptors' @:: Lens' Symbol (Data.Vector.Vector Descriptor)@ -}
+         * 'Proto.Scip_Fields.scheme' @:: Lens' Symbol Data.Text.Text@
+         * 'Proto.Scip_Fields.package' @:: Lens' Symbol Package@
+         * 'Proto.Scip_Fields.maybe'package' @:: Lens' Symbol (Prelude.Maybe Package)@
+         * 'Proto.Scip_Fields.descriptors' @:: Lens' Symbol [Descriptor]@
+         * 'Proto.Scip_Fields.vec'descriptors' @:: Lens' Symbol (Data.Vector.Vector Descriptor)@ -}
 data Symbol
   = Symbol'_constructor {_Symbol'scheme :: !Data.Text.Text,
                          _Symbol'package :: !(Prelude.Maybe Package),
@@ -2867,11 +2867,11 @@ instance Control.DeepSeq.NFData Symbol where
                    (Control.DeepSeq.deepseq (_Symbol'descriptors x__) ())))
 {- | Fields :
      
-         * 'Proto.Src.Scip_Fields.symbol' @:: Lens' SymbolInformation Data.Text.Text@
-         * 'Proto.Src.Scip_Fields.documentation' @:: Lens' SymbolInformation [Data.Text.Text]@
-         * 'Proto.Src.Scip_Fields.vec'documentation' @:: Lens' SymbolInformation (Data.Vector.Vector Data.Text.Text)@
-         * 'Proto.Src.Scip_Fields.relationships' @:: Lens' SymbolInformation [Relationship]@
-         * 'Proto.Src.Scip_Fields.vec'relationships' @:: Lens' SymbolInformation (Data.Vector.Vector Relationship)@ -}
+         * 'Proto.Scip_Fields.symbol' @:: Lens' SymbolInformation Data.Text.Text@
+         * 'Proto.Scip_Fields.documentation' @:: Lens' SymbolInformation [Data.Text.Text]@
+         * 'Proto.Scip_Fields.vec'documentation' @:: Lens' SymbolInformation (Data.Vector.Vector Data.Text.Text)@
+         * 'Proto.Scip_Fields.relationships' @:: Lens' SymbolInformation [Relationship]@
+         * 'Proto.Scip_Fields.vec'relationships' @:: Lens' SymbolInformation (Data.Vector.Vector Relationship)@ -}
 data SymbolInformation
   = SymbolInformation'_constructor {_SymbolInformation'symbol :: !Data.Text.Text,
                                     _SymbolInformation'documentation :: !(Data.Vector.Vector Data.Text.Text),
@@ -3616,10 +3616,10 @@ instance Control.DeepSeq.NFData TextEncoding where
   rnf x__ = Prelude.seq x__ ()
 {- | Fields :
      
-         * 'Proto.Src.Scip_Fields.name' @:: Lens' ToolInfo Data.Text.Text@
-         * 'Proto.Src.Scip_Fields.version' @:: Lens' ToolInfo Data.Text.Text@
-         * 'Proto.Src.Scip_Fields.arguments' @:: Lens' ToolInfo [Data.Text.Text]@
-         * 'Proto.Src.Scip_Fields.vec'arguments' @:: Lens' ToolInfo (Data.Vector.Vector Data.Text.Text)@ -}
+         * 'Proto.Scip_Fields.name' @:: Lens' ToolInfo Data.Text.Text@
+         * 'Proto.Scip_Fields.version' @:: Lens' ToolInfo Data.Text.Text@
+         * 'Proto.Scip_Fields.arguments' @:: Lens' ToolInfo [Data.Text.Text]@
+         * 'Proto.Scip_Fields.vec'arguments' @:: Lens' ToolInfo (Data.Vector.Vector Data.Text.Text)@ -}
 data ToolInfo
   = ToolInfo'_constructor {_ToolInfo'name :: !Data.Text.Text,
                            _ToolInfo'version :: !Data.Text.Text,
@@ -3855,7 +3855,8 @@ instance Control.DeepSeq.NFData ToolInfo where
 packedFileDescriptor :: Data.ByteString.ByteString
 packedFileDescriptor
   = "\n\
-    \\SOsrc/scip.proto\DC2\EOTscip\"\165\SOH\n\
+    \\n\
+    \scip.proto\DC2\EOTscip\"\165\SOH\n\
     \\ENQIndex\DC2*\n\
     \\bmetadata\CAN\SOH \SOH(\v2\SO.scip.MetadataR\bmetadata\DC2,\n\
     \\tdocuments\CAN\STX \ETX(\v2\SO.scip.DocumentR\tdocuments\DC2B\n\

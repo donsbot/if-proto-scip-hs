@@ -11,15 +11,16 @@ homepage:           https://github.com/donsbot/if-proto-scip-hs
 category:           Language
 extra-doc-files:    CHANGELOG.md
 build-type:         Simple
-extra-source-files: proto/scip.proto
+extra-source-files: scip.proto
+
 
 library
+    default-language: Haskell2010
     ghc-options: -Wall
     exposed-modules:
-        Proto.Src.Scip,
-        Proto.Src.Scip_Fields
+        Proto.Scip,
+        Proto.Scip_Fields
     hs-source-dirs: src
-    default-language: Haskell2010
     build-depends: proto-lens-runtime, base
 
 test-suite basic

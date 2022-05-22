@@ -32,7 +32,8 @@ To generate the source files manually, in src/*
 ```
   protoc --plugin=protoc-gen-haskell=`which proto-lens-protoc` 
     --haskell_out=src \
-    --proto_path=proto
+    --proto_path=.
+    scip.proto
 ```
 
 Build the library as normal:
